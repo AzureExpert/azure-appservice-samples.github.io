@@ -1,21 +1,3 @@
-## Create an API app project 
-
-This section shows how to use the Azure API App project template. To learn how to configure an existing Web API project, skip to the [next section](#configure-a-web-api-project-as-an-api-app).
-
-Open Visual Studio 2013 and select **File > New Project**. Select the **ASP.NET Web Application** Template.  name the project *appserviceholapi*, and then click **OK**.
-
-![](../images/01-01-01-AppServiceHOL/01-filenew-v3.png)
-
-Select the **Azure API App** project template and then click **OK**.
-
-![](../images/01-01-01-AppServiceHOL/02-api-app-template-v3.png)
-
-Visual Studio creates a Web API project configured for deployment as an API app. You can skip the following section which shows how to configure an existing project, and go directly to the [Review API app metadata](#review-api-app-metadata) section.
-
-## Configure a Web API project as an API app 
-
-This section shows how to configure an existing Web API project as an API app. You'll begin by using the Web API project template to create a Web API project, and then you'll configure it as an API app.
-
 Open Visual Studio 2013 and select **File > New Project**. Select the **ASP.NET Web Application** Template.  name the project *appserviceholapi*, and then click **OK**.
 
 ![](../images/01-01-01-AppServiceHOL/01-filenew-v3.png)
