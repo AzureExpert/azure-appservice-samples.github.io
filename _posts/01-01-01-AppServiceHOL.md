@@ -15,11 +15,11 @@ Then, you will create a web app, using the same database as your mobile app. At 
 
 ## Table of Contents
 
-1. [Create Mobile App and Mobile Client]()
-2. [Modify Mobile Service]()
-3. [Connect an AngularJS Web Client to the Mobile App]()
-4. [Create API App with ASP.NET Web API]()
-5. [Create Logic App]()
+1. [Create a new mobile app backend](create-a-new-mobile-app-backend)
+2. [Create a new universal Windows app](create-a-new-universal-windows-app)
+3. [Connect an AngularJS Web Client to the Mobile App](connect-an-angularjs-web-client-to-the-mobile-app)
+4. [Create API App with ASP.NET Web API](create-an-api-app-wtih-aspnet-web-api)
+5. [Create a Logic App](create-a-logic-app)
 
 ## Prerequisites
 
@@ -40,6 +40,8 @@ Then, you will create a web app, using the same database as your mobile app. At 
 
 {% include 01-01-01-AppServiceHOL/app-service-web-angular-web-client-mobile-app-api.md %}
 
-## Create an API App
+## Create an API App with ASP.NET Web API
 
 {% include 01-01-01-AppServiceHOL/app-service-api-create-api-app.md %}
+
+## Create a Logic App

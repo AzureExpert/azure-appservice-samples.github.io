@@ -24,7 +24,7 @@ In the **Choose API App Metadata source** dialog, click **Automatic Metadata Gen
 
 ![](../images/01-01-01-AppServiceHOL/chooseswagger.png)
 
-This choice enables the dynamic Swagger UI, which you'll see later in the tutorial. For information about the static Swagger metadata file option, see [Convert an existing API to an API app](app-service-dotnet-create-api-app-visual-studio.md). 
+This choice enables the dynamic Swagger UI, which you'll see later in the tutorial. For information about the static Swagger metadata file option, see [Convert an existing API to an API app](http://azure.microsoft.com/documentation/articles/app-service-dotnet-create-api-app-visual-studio). 
 
 When you click **OK**, Visual Studio installs API app NuGet packages and adds API app metadata to the Web API project.  In the next section you see what was added.
 
@@ -53,7 +53,7 @@ The default contents of the *apiapp.json* file resemble the following example:
 
 The *Metadata* folder contains information such as screenshots for the API App gallery or a static Swagger API definition file.
 
-For this tutorial you don't need to modify any of this metadata. For more information about the format of *apiapp.json* and the contents of the *Metadata* folder, see [Convert an existing API to an API app](app-service-dotnet-create-api-app-visual-studio.md). 
+For this tutorial you don't need to modify any of this metadata. For more information about the format of *apiapp.json* and the contents of the *Metadata* folder, see [Convert an existing API to an API app](http://azure.microsoft.com/documentation/articles/app-service-dotnet-create-api-app-visual-studio). 
 
 ## Add Web API code
 
