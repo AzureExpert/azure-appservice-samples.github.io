@@ -45,3 +45,5 @@ Then, you will create a web app, using the same database as your mobile app. At 
 {% include 01-01-01-AppServiceHOL/app-service-api-create-api-app.md %}
 
 ## Create a Logic App
+
+{% include 01-01-01-AppServiceHOL/app-service-logic-create-logic-app.md %}
