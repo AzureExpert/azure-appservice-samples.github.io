@@ -8,12 +8,13 @@ description: "A listing of demo scripts for the App Service in a box kit"
 <section id="home">
   {{ welcome_content | markdownify }}
 </section>
+<hr>
 
 {% for post in site.posts %}
 
   <section>
     {{ post.content }}
   </section>
-  <hr style="width:100%" />
+  <hr>
 
 {% endfor %}

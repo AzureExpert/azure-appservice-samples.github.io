@@ -11,85 +11,82 @@
 5. Create a new folder to the project called **App**
 6. Create a new file in the App folder called **index.html**
 
-	```
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	    <title>MultiChannel ToDo</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	    <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
-	    <link href="css/site.css" rel="stylesheet" />
-	</head>
+	<pre>
+	&lt;!DOCTYPE html&gt;
+	&lt;html lang=&quot;en&quot;&gt;
+	&lt;head&gt;
+	    &lt;title&gt;MultiChannel ToDo&lt;/title&gt;
+	    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+	    &lt;link href=&quot;lib/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	    &lt;link href=&quot;lib/bootstrap/css/bootstrap-theme.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	    &lt;link href=&quot;css/site.css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;/head&gt;
 	
-	<body ng-app="multiChannelToDo">
+	&lt;body ng-app=&quot;multiChannelToDo&quot;&gt;
 	
-	    <div class="container" ng-controller="ToDoController">
-	        <h1><span class="glyphicon glyphicon-list-alt"></span> To Do List</h1>
-	        <div class="check-list-container">
-	            <div class="check-list-item-container">
-	                <ul class="check-list">
-	                    <li id="check-list-item-{{item.id}}" ng-repeat="item in items" ng-hide="{{item.complete}}" ng-click="complete(item)" class="check-list-item"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> {{item.text}} - {{item.phoneNumber}}</li>
-	                </ul>
-	            </div>
-	        </div>
-	        <hr class=""/>
-	        <div class="controls-container">
-	            <form ng-submit="add()" class="form-inline">
-	                <div class="form-group">
-	                    <input id="Text" ng-model="itemText" type="text" class="form-control" placeholder="Task" />
-	                    <input id="PhoneNumber" ng-model="itemPhone" type="tel" class="form-control" placeholder="Phone Number" />
-	                    <button class="btn btn-primary">Add Item</button>
-	                </div>
-	            </form>
-	        </div>
-	    </div>
+	    &lt;div class=&quot;container&quot; ng-controller=&quot;ToDoController&quot;&gt;
+	        &lt;h1&gt;&lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; To Do List&lt;/h1&gt;
+	        &lt;div class=&quot;check-list-container&quot;&gt;
+	            &lt;div class=&quot;check-list-item-container&quot;&gt;
+	                &lt;ul class=&quot;check-list&quot;&gt;
+	                    &lt;li id=&quot;check-list-item-{{item.id}}&quot; ng-repeat=&quot;item in items&quot; ng-hide=&quot;{{item.complete}}&quot; ng-click=&quot;complete(item)&quot; class=&quot;check-list-item&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; {{item.text}} - {{item.phoneNumber}}&lt;/li&gt;
+	                &lt;/ul&gt;
+	            &lt;/div&gt;
+	        &lt;/div&gt;
+	        &lt;hr class=&quot;&quot;/&gt;
+	        &lt;div class=&quot;controls-container&quot;&gt;
+	            &lt;form ng-submit=&quot;add()&quot; class=&quot;form-inline&quot;&gt;
+	                &lt;div class=&quot;form-group&quot;&gt;
+	                    &lt;input id=&quot;Text&quot; ng-model=&quot;itemText&quot; type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Task&quot; /&gt;
+	                    &lt;input id=&quot;PhoneNumber&quot; ng-model=&quot;itemPhone&quot; type=&quot;tel&quot; class=&quot;form-control&quot; placeholder=&quot;Phone Number&quot; /&gt;
+	                    &lt;button class=&quot;btn btn-primary&quot;&gt;Add Item&lt;/button&gt;
+	                &lt;/div&gt;
+	            &lt;/form&gt;
+	        &lt;/div&gt;
+	    &lt;/div&gt;
 	
-	    <script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
-	    <script src="lib/angular/angular.min.js" type="text/javascript"></script>
-	    <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	    <!-- AngularJS App -->
-	    <script src="js/app.js" type="text/javascript"></script>
-	    <script src="js/controllers/ToDoController.js" type="text/javascript"></script>
-	    <script src="js/services/ToDoService.js" type="text/javascript"></script>
+	    &lt;script src=&quot;lib/jquery/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	    &lt;script src=&quot;lib/angular/angular.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	    &lt;script src=&quot;lib/bootstrap/js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	    &lt;!-- AngularJS App --&gt;
+	    &lt;script src=&quot;js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	    &lt;script src=&quot;js/controllers/ToDoController.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	    &lt;script src=&quot;js/services/ToDoService.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 	
-	</body>
-	</html>
-	```
+	&lt;/body&gt;
+	&lt;/html&gt;</pre>
 
 7. create a new file in the App folder called **web.config**
 	
-	```
-	<?xml version="1.0" encoding="utf-8"?>
-	<!--
+	<pre>
+	&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+	&lt;!--
 	  For more information on how to configure your ASP.NET application, please visit
 	  http://go.microsoft.com/fwlink/?LinkId=169433
-	  -->
-	<configuration>
-	  <system.web>
-	    <compilation debug="true" targetFramework="4.5" />
-	    <httpRuntime targetFramework="4.5" />
-	  </system.web>
-	  <appSettings>
-	    <add key="apiPath" value=""/>
-	  </appSettings>
-	  <system.webServer>
-	    <staticContent>
-	      <mimeMap fileExtension="eot" mimeType="application/vnd.ms-fontobject" />
-	      <mimeMap fileExtension="ttf" mimeType="application/octet-stream" />
-	      <mimeMap fileExtension="woff" mimeType="font/x-woff" />
-	      <mimeMap fileExtension="woff2" mimeType="font/x-woff2" />
-	      <mimeMap fileExtension="json" mimeType="application/json"/>
-	    </staticContent>
-	  </system.webServer>
-	</configuration>
-
-	```
+	  --&gt;
+	&lt;configuration&gt;
+	  &lt;system.web&gt;
+	    &lt;compilation debug=&quot;true&quot; targetFramework=&quot;4.5&quot; /&gt;
+	    &lt;httpRuntime targetFramework=&quot;4.5&quot; /&gt;
+	  &lt;/system.web&gt;
+	  &lt;appSettings&gt;
+	    &lt;add key=&quot;apiPath&quot; value=&quot;&quot;/&gt;
+	  &lt;/appSettings&gt;
+	  &lt;system.webServer&gt;
+	    &lt;staticContent&gt;
+	      &lt;mimeMap fileExtension=&quot;eot&quot; mimeType=&quot;application/vnd.ms-fontobject&quot; /&gt;
+	      &lt;mimeMap fileExtension=&quot;ttf&quot; mimeType=&quot;application/octet-stream&quot; /&gt;
+	      &lt;mimeMap fileExtension=&quot;woff&quot; mimeType=&quot;font/x-woff&quot; /&gt;
+	      &lt;mimeMap fileExtension=&quot;woff2&quot; mimeType=&quot;font/x-woff2&quot; /&gt;
+	      &lt;mimeMap fileExtension=&quot;json&quot; mimeType=&quot;application/json&quot;/&gt;
+	    &lt;/staticContent&gt;
+	  &lt;/system.webServer&gt;
+	&lt;/configuration&gt;</pre>
 
 6. Create three (3) folders in App called **css**, **js**, and **lib**
 7. Create a new file in the css folder called **site.css** and paste the following:
 
-	```
+	<pre>
 	.container {
 	    width: 300px;
 	    margin: auto;
@@ -121,21 +118,18 @@
 	
 	div.controls-container {
 	    text-align: right;
-	}
-
-	```
+	}</pre>
 	
 8. Create a new file in the js folder called **app.js**
 
-	```
+	<pre>
 	var multiChannelToDoApp = angular.module('multiChannelToDo', []);
-	var apiPath = "http://mobilehol-code.azurewebsites.net/tables";
-	```
+	var apiPath = "http://mobilehol-code.azurewebsites.net/tables";</pre>
 
 9. Create two (2) folders in the js folder called **controllers** and **services**
 10. Create a new file in the controllers folder called **ToDoController.js**
 
-	```
+	<pre>
 	'use strict';
 	multiChannelToDoApp
 	    .controller('ToDoController', ['$scope', 'toDoService', function ($scope, toDoService) {
@@ -165,12 +159,11 @@
 	
 	        $scope.get();
 	
-	}]);
-	```
+	}]);</pre>
 
 11. Create a new file in the services folder called **ToDoService.js**
 
-	```
+	<pre>
 	'use strict';
 	multiChannelToDoApp
 	    .factory('toDoService', ['$http', function ($http) {
@@ -188,8 +181,7 @@
 	                return $http.patch(apiPath + '/TodoItem/' + item.id, { "id": item.id, "text": item.text, "complete": true });
 	            }
 	        }
-	    }]);
-	```
+	    }]);</pre>
 
 12. Create three (3) folders in the lib folder called **angular**, **bootstrap**, **jquery**
 13. Download the minified Angular library from [code.angularjs.org](https://code.angularjs.org/1.3.6/angular.min.js)

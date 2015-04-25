@@ -1,3 +1,8 @@
+---
+title: Azure AppService Hands-On Lab
+layout: default
+---
+
 # AppService Hands-On Lab
 
 In this lab...
