@@ -28,7 +28,7 @@ This choice enables the dynamic Swagger UI, which you'll see later in the tutori
 
 When you click **OK**, Visual Studio installs API app NuGet packages and adds API app metadata to the Web API project.  In the next section you see what was added.
 
-## Review API app metadata
+### Review API app metadata
 
 The metadata that enables a Web API project to be deployed as an API app is contained in an *apiapp.json* file and a *Metadata* folder.
 
@@ -55,7 +55,7 @@ The *Metadata* folder contains information such as screenshots for the API App g
 
 For this tutorial you don't need to modify any of this metadata. For more information about the format of *apiapp.json* and the contents of the *Metadata* folder, see [Convert an existing API to an API app](http://azure.microsoft.com/documentation/articles/app-service-dotnet-create-api-app-visual-studio). 
 
-## Add Web API code
+### Add Web API code
 
 In the following steps you add code for a simple HTTP Get method that returns a hard-coded list of contacts. 
 
@@ -167,7 +167,7 @@ Replace the code in this file with the code below.
 	    }
 	}
 
-## Enable Swagger UI
+### Enable Swagger UI
 
 By default, API App projects are enabled with automatic [Swagger](http://swagger.io/ "Official Swagger information") metadata generation, and if you used the **Add API App SDK** menu entry to convert a Web API project, an API test page is also enabled by default.  
 
@@ -187,7 +187,7 @@ When you're done, the file should look like this:
 
 ![](../images/01-01-01-AppServiceHOL/13-enable-swagger-ui-with-box.png)
 
-## Test the Web API
+### Test the Web API
 
 To view the API test page, run the app locally (CTRL-F5) and navigate to `/swagger`. 
 

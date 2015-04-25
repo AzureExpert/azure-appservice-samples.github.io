@@ -11,3 +11,5 @@ Now, you need to create a new Logic app:
 3. Choose the **App service plan** you used when creating your connectors. This should automatically choose the Location, Subscription and Resource Group for you.
 
 This takes care of the basic settings, but don't click **Create** just yet. Next, you will add triggers and actions to your workflow.
+
+### Adding a trigger
