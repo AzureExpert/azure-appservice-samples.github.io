@@ -1,3 +1,7 @@
+### Enable Anonymous Authentication in Mobile App
+
+{% include 01-01-01-AppServiceHOL/task-enable-anonymous-auth.md %}
+
 ### Enable CORS in Mobile App
 
 {% include 01-01-01-AppServiceHOL/task-enable-cors.md %}
