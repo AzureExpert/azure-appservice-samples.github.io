@@ -36,8 +36,9 @@ This downloads a solution contains projects for both the mobile app backend and 
 
 6. Next you need to edit **MainPage.xaml** in the Windows 8.1 project. You need to add a new textbox for the phone number and a corresponding label. Locate the TextInput TextBox and then make the edits to match the following code snippet 
 
-    <StackPanel Orientation="Vertical" Margin="72,0,0,0">
-    	<TextBlock>free text goes here</TextBlock>
+    StackPanel Orientation="Vertical" Margin="72,0,0,0">
+
+    	TextBlock>free text goes here</TextBlock>
     	<TextBox Name="TextInput" Margin="5" MinWidth="300"></TextBox>
     	<TextBlock>phone number goes here</TextBlock>
     	<TextBox Name="PhoneInput" Margin="5" MinWidth="300"></TextBox>	

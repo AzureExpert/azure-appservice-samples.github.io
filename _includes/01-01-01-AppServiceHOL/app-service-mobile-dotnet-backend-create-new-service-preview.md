@@ -38,7 +38,7 @@ You have now created a new mobile app backend that can be used by your mobile ap
 
 > After your mobile app is created, navigate in the portal to the sql server you just created (be sure to select the server and not the azure sql db). From there, click the settings part, expand the firewall part, and change the "Allow access to Azure services". If you don't do this, your application won't work.
 
-**Mobile backend verification steps**
+##Mobile backend verification steps
 In the portal, you should now see the newly created Mobile App. You can either browse for all your Mobile Apps, by selecting clicking the **BROWSE** button on the portal left nav-bar. Or if you have made no changes to the defaults during creation, you should see your new Mobile App on your start board. 
 
 10. select the mobile backend app you created. The blad that opens displays your Mobile App URL. 
