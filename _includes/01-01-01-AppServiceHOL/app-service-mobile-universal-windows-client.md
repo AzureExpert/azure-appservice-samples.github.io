@@ -14,4 +14,36 @@ In this section you will create a new universal Windows app that is connected to
 
 4. Under **Download and run your app and service locally**, select a language for your Windows Store app, then click **Download**.
 
-   This downloads a solution contains projects for both the mobile app backend and for the sample _To do list_ application that is connected to your mobile app backend. Save the compressed project file to your local computer, and make a note of where you save it.
+This downloads a solution contains projects for both the mobile app backend and for the sample _To do list_ application that is connected to your mobile app backend. Save the compressed project file to your local computer, upzip the compressed file and open Visual studio to edit the project. 
+
+  ![](../images/01-01-01-AppServiceHOL/mobile-client-vs-projectview.png)
+
+5. The mobile client application for Windows includes three projects. One projected *shared* by the two other Windows Phone and Windows 8.1 projects. the *shared* project includes, among other, the DataModel folder. Identify the **TodoItem.cs** file and add two properties as indicated by the following code snippet:
+
+    public class TodoItem
+    {
+    public string Id { get; set; }
+    
+    [JsonProperty(PropertyName = "text")]
+    public string Text { get; set; }
+    
+    [JsonProperty(PropertyName = "complete")]
+    public bool Complete { get; set; }
+    
+    [JsonProperty(PropertyName ="phonenumber")]
+    public string PhoneNumber { get; set; }
+    }
+
+6. Next you need to edit **MainPage.xaml** in the Windows 8.1 project. You need to add a new textbox for the phone number and a corresponding label. Locate the TextInput TextBox and then make the edits to match the following code snippet 
+
+    <StackPanel Orientation="Vertical" Margin="72,0,0,0">
+    	<TextBlock>free text goes here</TextBlock>
+    	<TextBox Name="TextInput" Margin="5" MinWidth="300"></TextBox>
+    	<TextBlock>phone number goes here</TextBlock>
+    	<TextBox Name="PhoneInput" Margin="5" MinWidth="300"></TextBox>	
+    	<Button Name="ButtonSave" Click="ButtonSave_Click" IsEnabled="False">Save</Button>
+    </StackPanel>
+
+7. At this stage your Windows 8.1 application should be ready to run and successfully connect to your mobile backend
+
+ ![](../images/01-01-01-AppServiceHOL/mobile-client-windows8-1-running.png)
