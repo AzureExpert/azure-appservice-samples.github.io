@@ -46,6 +46,8 @@ As an example, for the URI looks like this- *http://mobilehol-code.azurewebsites
 
 this marks the processed flag as true. In REST API, the PATCH verb can take partial parts of the full body object. This will end up calling the mobile backend code updating the item identified by *repeatItem().id*
 
+![Call Mobile Backend](../images/01-01-01-AppServiceHOL/logicapp-editflow4.png)
+
 Save the flow you created, and it will start running automatically. 
 
 8. Return to the Logic App Blade. At this point your Logic Application is ready to run and will start running automatically. At the bottom of the Logic App blade, you can see the state of the **All runs**. Green check mark indicates successful run. Click on specific *run* instance shows all the steps of the workflow. 
