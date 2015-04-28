@@ -14,6 +14,11 @@ In this section you will create a new universal Windows app that is connected to
 
 4. Under **Download and run your app and service locally**, select a language for your Windows Store app, then click **Download**.
 
+<<<<<<< HEAD
+   This downloads a solution contains projects for both the mobile app backend and for the sample _To do list_ application that is connected to your mobile app backend. Save the compressed project file to your local computer, and make a note of where you save it.
+
+
+=======
 This downloads a solution contains projects for both the mobile app backend and for the sample _To do list_ application that is connected to your mobile app backend. Save the compressed project file to your local computer, upzip the compressed file and open Visual studio to edit the project. 
 
   ![](../images/01-01-01-AppServiceHOL/mobile-client-vs-projectview.png)
@@ -48,3 +53,4 @@ This downloads a solution contains projects for both the mobile app backend and 
 7. At this stage your Windows 8.1 application should be ready to run and successfully connect to your mobile backend
 
  ![](../images/01-01-01-AppServiceHOL/mobile-client-windows8-1-running.png)
+>>>>>>> fcfe7cc43172ed174fc312b5ba6a069b4380886d
