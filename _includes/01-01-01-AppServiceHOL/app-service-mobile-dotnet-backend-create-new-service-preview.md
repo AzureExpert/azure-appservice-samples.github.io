@@ -34,7 +34,6 @@ Follow these steps to create a new mobile app.
 
 9. Click the **Create** button at the bottom of the blade and you should see it starting deployment in the notifications window.
 
-
 You have now created a new mobile app backend that can be used by your mobile apps.
 
 > After your mobile app is created, navigate in the portal to the sql server you just created (be sure to select the server and not the azure sql db). From there, click the settings part, expand the firewall part, and change the "Allow access to Azure services". If you don't do this, your application won't work.
