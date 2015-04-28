@@ -5,13 +5,11 @@ layout: default
 
 # AppService Hands-On Lab
 
-In this lab...
-
-You will create an Azure App Service application. The *To do list* app allows you to create and manage ‘to do’ items. When you mark to do item as complete, the app will send SMS confirmation to the phone number associated with the to do item.
+In this lab you will create an Azure App Service application. The *To do list* app allows you to create and manage ‘to do’ items. When you mark to do item as complete, the app will send SMS confirmation to the phone number associated with the to do item.
  
 The *To do list* app includes a mobile app backend, a Web App, an API App, and a Logic App. The *To do list* app stores app data in the mobile app backend. The mobile app backend uses the supported .NET languages for server-side business logic. The mobile client app use any client platform supported by Azure App Service Mobile App, including iOS, Windows, Xamarin iOS, and Xamarin Android.
 
-The web app uses the mobile app backend that serves as REST API endpoint. The API app to exposes specific functionality required by the Logic app. The Logic app uses the API app to monitor any completed to do items, then it uses a Twilio connector to send the SMS confirmation and mark the to do item as processed to avoid sending multiple SMS for a single item.
+The web app uses the mobile app backend that serves as REST API endpoint. The API app exposes specific functionality required by the Logic app. The Logic app uses the API app to monitor any completed to do items, then it uses a Twilio connector to send the SMS confirmation and mark the to do item as processed to avoid sending multiple SMS for a single item.
 
 At the end of this tutorial, you will have a web client and a mobile client that work with the same data and are kept synced. 
 
@@ -20,11 +18,11 @@ At the end of this tutorial, you will have a web client and a mobile client that
 
 ## Table of Contents
 
-1. [Create a new mobile app backend](create-a-new-mobile-app-backend)
-2. [Create a new universal Windows app](create-a-new-universal-windows-app)
-3. [Connect an AngularJS Web Client to the Mobile App](connect-an-angularjs-web-client-to-the-mobile-app)
-4. [Create API App with ASP.NET Web API](create-an-api-app-wtih-aspnet-web-api)
-5. [Create a Logic App](create-a-logic-app)
+1. [Create a new mobile app backend](#create-a-new-mobile-app-backend)
+2. [Create a new universal Windows app](#create-a-new-universal-windows-app)
+3. [Connect an AngularJS Web Client to the Mobile App](#connect-an-angularjs-web-client-to-the-mobile-app)
+4. [Create an API App with ASP.NET Web API](#create-an-api-app-with-aspnet-web-api)
+5. [Create a Logic App](#create-a-logic-app)
 
 ## Prerequisites
 
@@ -41,7 +39,7 @@ At the end of this tutorial, you will have a web client and a mobile client that
 
 {% include 01-01-01-AppServiceHOL/app-service-mobile-universal-windows-client.md %}
 
-## Connect an Angular Web Client to the Mobile App
+## Connect an AngularJS Web Client to the Mobile App
 
 {% include 01-01-01-AppServiceHOL/app-service-web-angular-web-client-mobile-app-api.md %}
 

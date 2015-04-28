@@ -10,7 +10,7 @@ Follow these steps to create a new mobile app.
 
 2. Type a name for your Mobile App. It must be at least 8 characters long and lowercase a to z.  
 
-7. Select a region. In this tutorial, we use **South Central US**.
+7. Select a region.
 
    > As part of this tutorial, you create a new SQL Database instance and server. You can reuse this new database and administer it as you would any other SQL Database instance. If you already have a database in the same region as the new mobile app backend, you can instead choose **Use existing Database** and then select that database. The use of a database in a different region is not recommended because of additional bandwidth costs and higher latencies.
 
@@ -22,11 +22,11 @@ Follow these steps to create a new mobile app.
 
    ![](../images/01-01-01-AppServiceHOL/dotnet-backend-create-db.png)
 
-6. Create a new webhosting plan with the same name as your mobile app.
+6. Create a new App Service Plan with the same name as your mobile app.
 
-   > Type your webhosting plan name, do not copy/paste. There is name validation on this field that fails if you don't type the name. It doesn't have to be exactly the same name as the website (but it needs to follow the same rules).
+   > Type your App Service Plan name, do not copy/paste. There is name validation on this field that fails if you don't type the name. It doesn't have to be exactly the same name as the website (but it needs to follow the same rules).
 
-8. Select a Pricing Tier. In this tutorial, we use **Standard 1**.
+8. Select a Pricing Tier.
 
    Your new mobile app settings page will now look something like this:
 

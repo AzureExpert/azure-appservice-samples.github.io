@@ -15,3 +15,5 @@ In this section you will create a new universal Windows app that is connected to
 4. Under **Download and run your app and service locally**, select a language for your Windows Store app, then click **Download**.
 
    This downloads a solution contains projects for both the mobile app backend and for the sample _To do list_ application that is connected to your mobile app backend. Save the compressed project file to your local computer, and make a note of where you save it.
+
+

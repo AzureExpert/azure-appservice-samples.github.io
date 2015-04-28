@@ -7,7 +7,6 @@
 
 3. Add the following code after line 23.
 
-	```
-    // Enable CORS
-    config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
-	```
+	<pre>
+    // Enable CORS  
+	config.EnableCors(new EnableCorsAttribute("*", "*", "*"));</pre>
