@@ -191,3 +191,81 @@
 13. Download the minified Angular library from [code.angularjs.org](https://code.angularjs.org/1.3.6/angular.min.js)
 14. Download the bootstrap library from [getbootstrap.com](https://github.com/twbs/bootstrap/releases/download/v3.3.2/bootstrap-3.3.2-dist.zip)
 15. Download the minified jquery library from [jquery.com](http://code.jquery.com/jquery-2.1.3.min.js)
+
+### Publish Angular Web Client
+
+6.  In Solution Explorer, right-click the project and click **Publish**.
+
+	![][DeployClickPublish]
+
+7.	In Publish Web, click **Microsoft Azure Web Apps**.
+
+	![][DeployClickWebSites]
+
+8.	Click **Sign in**.
+
+	![][DeploySignIn]
+
+9.	Follow the prompts to log into your Azure account.
+
+11. The Select Existing Web App dialog should now show you as signed in. Click **New**.
+
+	![][DeployNewWebsite]  
+
+12. In the **Web App name** field, specify a unique app name prefix. Your fully-qualified web app name will be *&lt;prefix>*.azurewebsites.net. Also, configure the **App Service plan**, **Resource group**, and **Region** fields. Then, click **Create**.
+
+	![][DeploySiteSettings]
+
+13.	The Publish Web dialog will be filled with the settings for your new web app. Click **Publish**.
+
+	![][DeployPublishSite]
+
+	Once Visual Studio finishes publishing the starter project to the Azure web app, the desktop browser opens to display the live web app.
+
+     > Publishing the application will result in the app folder being deployed to the wwwroot directory. You will be met with a message which says "You do not have permission to view this directory or page." when the page loads from the browser launched by Visual Studio.
+
+1. In Web App Blade for the Angular web app, click **Settings**
+  
+   ![](./images/01-01-01-AppServiceHOL/webhol-settings.png)
+
+1. Click on **Application Settings**
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-appsettings.png)
+
+1. Scroll to the Virtual Applications and Directory section at the bottom of the blade
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-appsettings-virtdir.png)
+
+1. Add **app** to the end of the root virtual application
+ 
+   ![](./images/01-01-01-AppServiceHOL/webhol-update-virtdir.png)
+
+1. Click **Save**
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-virtdir-save.png)
+
+
+### Validation Steps
+
+1. Browse the Angular Web App or Refresh the browser window opened by Visual Studio.
+1. Add a **new task** by filling in the following UI and hitting **Add Item**
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-addtask.png)
+
+1. Verify the task is added to the list
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-mynewtask.png)
+
+1. Click on the task and Verify it is cleared from the list
+
+   ![](./images/01-01-01-AppServiceHOL/webhol-clearlist.png)
+
+
+[DeployClickPublish]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-1.png
+[DeployClickWebSites]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-2.png
+[DeploySignIn]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-3.png
+[DeployUsername]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-4.png
+[DeployPassword]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-5.png
+[DeployNewWebsite]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-6.png
+[DeploySiteSettings]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-7.png
+[DeployPublishSite]: ./images/01-01-01-AppServiceHOL/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/deploy-to-azure-website-8.png
